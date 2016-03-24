@@ -1,0 +1,26 @@
+<h1>Listing spotify_artists</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Popularity</th>
+    <th>Avatar url</th>
+    <th>Genres</th>
+  </tr>
+
+<% @spotify_artists.each do |spotify_artist| %>
+  <tr>
+    <td><%=h spotify_artist.name %></td>
+    <td><%=h spotify_artist.popularity %></td>
+    <td><%=image_tag spotify_artist.avatar_url %></td>
+    <td><%=h spotify_artist.genres %></td>
+    <td><%= link_to 'Show', spotify_artist %></td>
+    <td><%= link_to 'Edit', edit_spotify_artist_path(spotify_artist) %></td>
+    <td><%= link_to 'Destroy', spotify_artist, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New spotify_artist', new_spotify_artist_path %>

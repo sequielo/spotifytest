@@ -1,0 +1,28 @@
+<h1>Editing spotify_artist</h1>
+
+<% form_for(@spotify_artist) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :popularity %><br />
+    <%= f.text_field :popularity %>
+  </p>
+  <p>
+    <%= f.label :avatar_url %><br />
+    <%= f.text_field :avatar_url %>
+  </p>
+  <p>
+    <%= f.label :genres %><br />
+    <%= f.text_field :genres %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @spotify_artist %> |
+<%= link_to 'Back', spotify_artists_path %>
