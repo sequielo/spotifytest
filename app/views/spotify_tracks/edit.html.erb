@@ -12,6 +12,10 @@
     <%= f.text_field :duration %>
   </p>
   <p>
+    <%= f.label :album %><br />
+    <%= f.text_field :album %>
+  </p>
+  <p>
     <%= f.label :track_number %><br />
     <%= f.text_field :track_number %>
   </p>
@@ -22,6 +26,10 @@
   <p>
     <%= f.label :preview_url %><br />
     <%= f.text_field :preview_url %>
+  </p>
+  <p>
+    <%= f.label :spotify_id %><br />
+    <%= f.text_field :spotify_id %>
   </p>
   <p>
     <%= f.submit 'Update' %>

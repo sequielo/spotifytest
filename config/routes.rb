@@ -1,6 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :spotify_tracks
 
+  map.resources :spotify_tracks
+
+  map.resources :spotify_tracks
+
   map.resources :spotify_artists
 
   map.resources :djs

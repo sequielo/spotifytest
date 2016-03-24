@@ -52,5 +52,29 @@ namespace :spotify do
     end
     puts "Done!"
   end
+
+  desc "Populate first track of first album from all DJs"
+  task :populate_first_tracks => :environment do
+    SpotifyArtist.all.each do |dj|
+      require 'rspotify'
+      RSpotify.authenticate(SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET)
+      artist = RSpotify::Artist.find(dj.spotify_id)
+      
+      first_album = artist.albums.first
+      first_track = first_album.tracks.first
+      SpotifyTrack.find_or_initialize_by_spotify_id(first_track.id).update_attributes({
+        :name => first_track.name,
+        :duration => first_track.duration_ms,
+        :album => first_album.name,
+        :track_number => first_track.track_number,
+        :disc_number => first_track.disc_number,
+        :preview_url => first_track.preview_url,
+        :spotify_id => first_track.id,
+        :spotify_artist_id => dj.id,
+      })
+      print "."
+    end
+    puts "Done!"
+  end
   
 end

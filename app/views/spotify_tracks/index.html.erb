@@ -4,18 +4,24 @@
   <tr>
     <th>Name</th>
     <th>Duration</th>
+    <th>Artist</th>
+    <th>Album</th>
     <th>Track number</th>
     <th>Disc number</th>
     <th>Preview url</th>
+    <th>Spotify ID</th>
   </tr>
 
 <% @spotify_tracks.each do |spotify_track| %>
   <tr>
     <td><%=h spotify_track.name %></td>
-    <td><%=h spotify_track.duration %></td>
+    <td><%=format_duration(spotify_track.duration) %></td>
+    <td><%=h spotify_track.spotify_artist.name rescue nil %></td>
+    <td><%=h spotify_track.album %></td>
     <td><%=h spotify_track.track_number %></td>
     <td><%=h spotify_track.disc_number %></td>
-    <td><%=h spotify_track.preview_url %></td>
+    <td><%=link_to "Preview", spotify_track.preview_url %></td>
+    <td><%=h spotify_track.spotify_id %></td>
     <td><%= link_to 'Show', spotify_track %></td>
     <td><%= link_to 'Edit', edit_spotify_track_path(spotify_track) %></td>
     <td><%= link_to 'Destroy', spotify_track, :confirm => 'Are you sure?', :method => :delete %></td>
