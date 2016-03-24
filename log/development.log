@@ -46,3 +46,663 @@
     /home/rooter/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
     /home/rooter/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
     /home/rooter/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (144.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (13.3ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateDjs (20160324193637)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDjs (20160324193637)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDjs (20160324193637)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDjs (20160324193637)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDjs (20160324193637)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "djs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20160324193637')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("djs")[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DAVID GUETTA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'HARDWELL') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'TIESTO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'MARTIN GARRIX') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'AVICII') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'AFROJACK') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DIMITRI VEGAS & LIKE MIKE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'SKRILLEX') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ARMIN VAN BUUREN') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'CALVIN HARRIS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'STEVE AOKI') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'NICKY ROMERO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DEADMAU5') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'R3HAB') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SWEDISH HOUSE MAFIA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ZEDD') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'W&W') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DVBBS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DAFT PUNK') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ALESSO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SNAKE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'AXWELL') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'NERVO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BLASTERJAXX') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SHOWTEK') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'FEDDE LE GRAND') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DIPLO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'PAUL VAN DYK') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'BORGEOUS') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'JUICY M') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DASH BERLIN') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'SANDER VAN DOORN') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ABOVE & BEYOND') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BASSJACKERS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'TOMMY TRASH') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'CARL COX') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'LAIDBACK LUKE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BINGO PLAYERS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'UMMET OZCAN') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DADA LIFE') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DANNIC') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'STEVE ANGELLO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KNIFE PARTY') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'MAJOR LAZER') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'OLIVER HELDENS') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'KREWELLA') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'VINAI') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DYRO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DON DIABLO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DILLON FRANCIS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KSHMR') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BL3ND') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'FIREBEATZ') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DEORRO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ERIC PRYDZ') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'QUINTINO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MAKJ') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'RICHIE HAWTIN') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KASKADE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ADAM BEYER') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SVEN VATH') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'KYGO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'THE CHAINSMOKERS') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'MARKUS SCHULZ') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SICK INDIVIDUALS') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = '3LAU') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ALY & FILA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BORGORE') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'CARNAGE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'NINA KRAVIZ') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'CHUCKIE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'PAUL OAKENFOLD') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'FERRY CORSTEN') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'THOMAS GOLD') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MARCO CAROLA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BENNY BENASSI') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'JAY HARDWAY') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DUBFIRE') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MOTI') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'TJR') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'LOCO DICE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ADVENTURE CLUB') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DZEKO & TORRES') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'GARETH EMERY') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DIRTY SOUTH') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'NYK') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'FTAMPA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'HEADHUNTERZ') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'VICETONE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'KILL THE NOISE') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'JOHN DIGWEED') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'UMEK') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MOGUAI') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ANDREW RAYEL') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'REDFOO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'JAUZ') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'JAMIE JONES') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'SHADOW') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ZOMBOY') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'MACEO PLEX') LIMIT 1[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DAVID GUETTA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'HARDWELL') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'TIESTO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'MARTIN GARRIX') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'AVICII') LIMIT 1[0m
+  [4;35;1mDj Load (0.2ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'AFROJACK') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DIMITRI VEGAS & LIKE MIKE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'SKRILLEX') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ARMIN VAN BUUREN') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'CALVIN HARRIS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'STEVE AOKI') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'NICKY ROMERO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DEADMAU5') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'R3HAB') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SWEDISH HOUSE MAFIA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ZEDD') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'W&W') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DVBBS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DAFT PUNK') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ALESSO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SNAKE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'AXWELL') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'NERVO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BLASTERJAXX') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SHOWTEK') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'FEDDE LE GRAND') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DIPLO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'PAUL VAN DYK') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'BORGEOUS') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'JUICY M') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DASH BERLIN') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'SANDER VAN DOORN') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ABOVE & BEYOND') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BASSJACKERS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'TOMMY TRASH') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'CARL COX') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'LAIDBACK LUKE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BINGO PLAYERS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'UMMET OZCAN') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DADA LIFE') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DANNIC') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'STEVE ANGELLO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KNIFE PARTY') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'MAJOR LAZER') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'OLIVER HELDENS') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'KREWELLA') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'VINAI') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DYRO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DON DIABLO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DILLON FRANCIS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KSHMR') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BL3ND') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'FIREBEATZ') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DEORRO') LIMIT 1[0m
+  [4;36;1mDj Load (0.4ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ERIC PRYDZ') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'QUINTINO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MAKJ') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'RICHIE HAWTIN') LIMIT 1[0m
+  [4;36;1mDj Load (1.0ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KASKADE') LIMIT 1[0m
+  [4;35;1mDj Load (0.7ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ADAM BEYER') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SVEN VATH') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'KYGO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'THE CHAINSMOKERS') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'MARKUS SCHULZ') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SICK INDIVIDUALS') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = '3LAU') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ALY & FILA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BORGORE') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'CARNAGE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'NINA KRAVIZ') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'CHUCKIE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'PAUL OAKENFOLD') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'FERRY CORSTEN') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'THOMAS GOLD') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MARCO CAROLA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BENNY BENASSI') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'JAY HARDWAY') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DUBFIRE') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MOTI') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'TJR') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'LOCO DICE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ADVENTURE CLUB') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DZEKO & TORRES') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'GARETH EMERY') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DIRTY SOUTH') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'NYK') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'FTAMPA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'HEADHUNTERZ') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'VICETONE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'KILL THE NOISE') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'JOHN DIGWEED') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'UMEK') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MOGUAI') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ANDREW RAYEL') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'REDFOO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'JAUZ') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'JAMIE JONES') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'SHADOW') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ZOMBOY') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'MACEO PLEX') LIMIT 1[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DAVID GUETTA') LIMIT 1[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DAVID GUETTA') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('DAVID GUETTA', '2016-03-24 19:59:57', '2016-03-24 19:59:57')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'HARDWELL') LIMIT 1[0m
+  [4;35;1mDj Create (0.2ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('HARDWELL', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'TIESTO') LIMIT 1[0m
+  [4;35;1mDj Create (0.1ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('TIESTO', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MARTIN GARRIX') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('MARTIN GARRIX', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'AVICII') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('AVICII', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'AFROJACK') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('AFROJACK', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DIMITRI VEGAS & LIKE MIKE') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('DIMITRI VEGAS & LIKE MIKE', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SKRILLEX') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('SKRILLEX', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ARMIN VAN BUUREN') LIMIT 1[0m
+  [4;35;1mDj Create (0.2ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('ARMIN VAN BUUREN', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'CALVIN HARRIS') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('CALVIN HARRIS', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'STEVE AOKI') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('STEVE AOKI', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'NICKY ROMERO') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('NICKY ROMERO', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DEADMAU5') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('DEADMAU5', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'R3HAB') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('R3HAB', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SWEDISH HOUSE MAFIA') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('SWEDISH HOUSE MAFIA', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ZEDD') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('ZEDD', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'W&W') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('W&W', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DVBBS') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('DVBBS', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DAFT PUNK') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('DAFT PUNK', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ALESSO') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('ALESSO', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SNAKE') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('SNAKE', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'AXWELL') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('AXWELL', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'NERVO') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('NERVO', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'BLASTERJAXX') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('BLASTERJAXX', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SHOWTEK') LIMIT 1[0m
+  [4;35;1mDj Create (0.2ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('SHOWTEK', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'FEDDE LE GRAND') LIMIT 1[0m
+  [4;35;1mDj Create (0.2ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('FEDDE LE GRAND', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DIPLO') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('DIPLO', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'PAUL VAN DYK') LIMIT 1[0m
+  [4;35;1mDj Create (0.2ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('PAUL VAN DYK', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'BORGEOUS') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('BORGEOUS', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'JUICY M') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('JUICY M', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DASH BERLIN') LIMIT 1[0m
+  [4;35;1mDj Create (0.5ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('DASH BERLIN', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SANDER VAN DOORN') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('SANDER VAN DOORN', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ABOVE & BEYOND') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('ABOVE & BEYOND', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'BASSJACKERS') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('BASSJACKERS', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'TOMMY TRASH') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('TOMMY TRASH', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'CARL COX') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('CARL COX', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'LAIDBACK LUKE') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('LAIDBACK LUKE', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'BINGO PLAYERS') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('BINGO PLAYERS', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'UMMET OZCAN') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('UMMET OZCAN', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DADA LIFE') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('DADA LIFE', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DANNIC') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('DANNIC', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'STEVE ANGELLO') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('STEVE ANGELLO', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KNIFE PARTY') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('KNIFE PARTY', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MAJOR LAZER') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('MAJOR LAZER', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'OLIVER HELDENS') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('OLIVER HELDENS', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.4ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KREWELLA') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('KREWELLA', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'VINAI') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('VINAI', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DYRO') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('DYRO', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DON DIABLO') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('DON DIABLO', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DILLON FRANCIS') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('DILLON FRANCIS', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KSHMR') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('KSHMR', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.4ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'BL3ND') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('BL3ND', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'FIREBEATZ') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('FIREBEATZ', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DEORRO') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('DEORRO', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ERIC PRYDZ') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('ERIC PRYDZ', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'QUINTINO') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('QUINTINO', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MAKJ') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('MAKJ', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'RICHIE HAWTIN') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('RICHIE HAWTIN', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KASKADE') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('KASKADE', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ADAM BEYER') LIMIT 1[0m
+  [4;35;1mDj Create (0.2ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('ADAM BEYER', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SVEN VATH') LIMIT 1[0m
+  [4;35;1mDj Create (0.2ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('SVEN VATH', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KYGO') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('KYGO', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'THE CHAINSMOKERS') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('THE CHAINSMOKERS', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MARKUS SCHULZ') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('MARKUS SCHULZ', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SICK INDIVIDUALS') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('SICK INDIVIDUALS', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = '3LAU') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('3LAU', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ALY & FILA') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('ALY & FILA', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'BORGORE') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('BORGORE', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'CARNAGE') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('CARNAGE', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'NINA KRAVIZ') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('NINA KRAVIZ', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'CHUCKIE') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('CHUCKIE', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'PAUL OAKENFOLD') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('PAUL OAKENFOLD', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'FERRY CORSTEN') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('FERRY CORSTEN', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'THOMAS GOLD') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('THOMAS GOLD', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MARCO CAROLA') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('MARCO CAROLA', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'BENNY BENASSI') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('BENNY BENASSI', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'JAY HARDWAY') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('JAY HARDWAY', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DUBFIRE') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('DUBFIRE', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MOTI') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('MOTI', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'TJR') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('TJR', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'LOCO DICE') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('LOCO DICE', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ADVENTURE CLUB') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('ADVENTURE CLUB', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DZEKO & TORRES') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('DZEKO & TORRES', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'GARETH EMERY') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('GARETH EMERY', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DIRTY SOUTH') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('DIRTY SOUTH', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.4ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'NYK') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('NYK', '2016-03-24 19:59:58', '2016-03-24 19:59:58')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'FTAMPA') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('FTAMPA', '2016-03-24 19:59:59', '2016-03-24 19:59:59')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'HEADHUNTERZ') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('HEADHUNTERZ', '2016-03-24 19:59:59', '2016-03-24 19:59:59')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'VICETONE') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('VICETONE', '2016-03-24 19:59:59', '2016-03-24 19:59:59')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KILL THE NOISE') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('KILL THE NOISE', '2016-03-24 19:59:59', '2016-03-24 19:59:59')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'JOHN DIGWEED') LIMIT 1[0m
+  [4;35;1mDj Create (0.2ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('JOHN DIGWEED', '2016-03-24 19:59:59', '2016-03-24 19:59:59')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'UMEK') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('UMEK', '2016-03-24 19:59:59', '2016-03-24 19:59:59')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MOGUAI') LIMIT 1[0m
+  [4;35;1mDj Create (0.2ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('MOGUAI', '2016-03-24 19:59:59', '2016-03-24 19:59:59')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ANDREW RAYEL') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('ANDREW RAYEL', '2016-03-24 19:59:59', '2016-03-24 19:59:59')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'REDFOO') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('REDFOO', '2016-03-24 19:59:59', '2016-03-24 19:59:59')[0m
+  [4;36;1mDj Load (0.4ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'JAUZ') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('JAUZ', '2016-03-24 19:59:59', '2016-03-24 19:59:59')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'JAMIE JONES') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('JAMIE JONES', '2016-03-24 19:59:59', '2016-03-24 19:59:59')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SHADOW') LIMIT 1[0m
+  [4;35;1mDj Create (0.4ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('SHADOW', '2016-03-24 19:59:59', '2016-03-24 19:59:59')[0m
+  [4;36;1mDj Load (0.3ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ZOMBOY') LIMIT 1[0m
+  [4;35;1mDj Create (0.3ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('ZOMBOY', '2016-03-24 19:59:59', '2016-03-24 19:59:59')[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MACEO PLEX') LIMIT 1[0m
+  [4;35;1mDj Create (0.2ms)[0m   [0mINSERT INTO "djs" ("name", "created_at", "updated_at") VALUES('MACEO PLEX', '2016-03-24 19:59:59', '2016-03-24 19:59:59')[0m
+  [4;36;1mDj Load (0.4ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DAVID GUETTA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'HARDWELL') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'TIESTO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'MARTIN GARRIX') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'AVICII') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'AFROJACK') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DIMITRI VEGAS & LIKE MIKE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'SKRILLEX') LIMIT 1[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ARMIN VAN BUUREN') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'CALVIN HARRIS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'STEVE AOKI') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'NICKY ROMERO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DEADMAU5') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'R3HAB') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SWEDISH HOUSE MAFIA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ZEDD') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'W&W') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DVBBS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DAFT PUNK') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ALESSO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SNAKE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'AXWELL') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'NERVO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BLASTERJAXX') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SHOWTEK') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'FEDDE LE GRAND') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DIPLO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'PAUL VAN DYK') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'BORGEOUS') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'JUICY M') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DASH BERLIN') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'SANDER VAN DOORN') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ABOVE & BEYOND') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BASSJACKERS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'TOMMY TRASH') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'CARL COX') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'LAIDBACK LUKE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BINGO PLAYERS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'UMMET OZCAN') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DADA LIFE') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DANNIC') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'STEVE ANGELLO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KNIFE PARTY') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'MAJOR LAZER') LIMIT 1[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'OLIVER HELDENS') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'KREWELLA') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'VINAI') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DYRO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DON DIABLO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DILLON FRANCIS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KSHMR') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BL3ND') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'FIREBEATZ') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DEORRO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ERIC PRYDZ') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'QUINTINO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MAKJ') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'RICHIE HAWTIN') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KASKADE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ADAM BEYER') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SVEN VATH') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'KYGO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'THE CHAINSMOKERS') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'MARKUS SCHULZ') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SICK INDIVIDUALS') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = '3LAU') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ALY & FILA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BORGORE') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'CARNAGE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'NINA KRAVIZ') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'CHUCKIE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'PAUL OAKENFOLD') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'FERRY CORSTEN') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'THOMAS GOLD') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MARCO CAROLA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BENNY BENASSI') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'JAY HARDWAY') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DUBFIRE') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MOTI') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'TJR') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'LOCO DICE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ADVENTURE CLUB') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DZEKO & TORRES') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'GARETH EMERY') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DIRTY SOUTH') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'NYK') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'FTAMPA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'HEADHUNTERZ') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'VICETONE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'KILL THE NOISE') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'JOHN DIGWEED') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'UMEK') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MOGUAI') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ANDREW RAYEL') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'REDFOO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'JAUZ') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'JAMIE JONES') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'SHADOW') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ZOMBOY') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'MACEO PLEX') LIMIT 1[0m
+  [4;36;1mDj Load (0.4ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DAVID GUETTA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'HARDWELL') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'TIESTO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'MARTIN GARRIX') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'AVICII') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'AFROJACK') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DIMITRI VEGAS & LIKE MIKE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'SKRILLEX') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ARMIN VAN BUUREN') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'CALVIN HARRIS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'STEVE AOKI') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'NICKY ROMERO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DEADMAU5') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'R3HAB') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SWEDISH HOUSE MAFIA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ZEDD') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'W&W') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DVBBS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DAFT PUNK') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ALESSO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SNAKE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'AXWELL') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'NERVO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BLASTERJAXX') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SHOWTEK') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'FEDDE LE GRAND') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DIPLO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'PAUL VAN DYK') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'BORGEOUS') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'JUICY M') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DASH BERLIN') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'SANDER VAN DOORN') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ABOVE & BEYOND') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BASSJACKERS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'TOMMY TRASH') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'CARL COX') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'LAIDBACK LUKE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BINGO PLAYERS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'UMMET OZCAN') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DADA LIFE') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DANNIC') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'STEVE ANGELLO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KNIFE PARTY') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'MAJOR LAZER') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'OLIVER HELDENS') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'KREWELLA') LIMIT 1[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'VINAI') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DYRO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DON DIABLO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DILLON FRANCIS') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KSHMR') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BL3ND') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'FIREBEATZ') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DEORRO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ERIC PRYDZ') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'QUINTINO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MAKJ') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'RICHIE HAWTIN') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'KASKADE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ADAM BEYER') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SVEN VATH') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'KYGO') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'THE CHAINSMOKERS') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'MARKUS SCHULZ') LIMIT 1[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'SICK INDIVIDUALS') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = '3LAU') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ALY & FILA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BORGORE') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'CARNAGE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'NINA KRAVIZ') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'CHUCKIE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'PAUL OAKENFOLD') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'FERRY CORSTEN') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'THOMAS GOLD') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MARCO CAROLA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'BENNY BENASSI') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'JAY HARDWAY') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'DUBFIRE') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MOTI') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'TJR') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'LOCO DICE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ADVENTURE CLUB') LIMIT 1[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DZEKO & TORRES') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'GARETH EMERY') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'DIRTY SOUTH') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'NYK') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'FTAMPA') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'HEADHUNTERZ') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'VICETONE') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'KILL THE NOISE') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'JOHN DIGWEED') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'UMEK') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'MOGUAI') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'ANDREW RAYEL') LIMIT 1[0m
+  [4;36;1mDj Load (0.2ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'REDFOO') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'JAUZ') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'JAMIE JONES') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'SHADOW') LIMIT 1[0m
+  [4;36;1mDj Load (0.1ms)[0m   [0;1mSELECT * FROM "djs" WHERE ("djs"."name" = 'ZOMBOY') LIMIT 1[0m
+  [4;35;1mDj Load (0.1ms)[0m   [0mSELECT * FROM "djs" WHERE ("djs"."name" = 'MACEO PLEX') LIMIT 1[0m

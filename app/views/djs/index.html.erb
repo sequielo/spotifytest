@@ -1,0 +1,20 @@
+<h1>Listing djs</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% @djs.each do |dj| %>
+  <tr>
+    <td><%=h dj.name %></td>
+    <td><%= link_to 'Show', dj %></td>
+    <td><%= link_to 'Edit', edit_dj_path(dj) %></td>
+    <td><%= link_to 'Destroy', dj, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New dj', new_dj_path %>
