@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @spotify_track.name %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%=h @spotify_track.duration %>
+</p>
+
+<p>
+  <b>Track number:</b>
+  <%=h @spotify_track.track_number %>
+</p>
+
+<p>
+  <b>Disc number:</b>
+  <%=h @spotify_track.disc_number %>
+</p>
+
+<p>
+  <b>Preview url:</b>
+  <%=h @spotify_track.preview_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_spotify_track_path(@spotify_track) %> |
+<%= link_to 'Back', spotify_tracks_path %>

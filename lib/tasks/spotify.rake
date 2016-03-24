@@ -18,11 +18,11 @@ namespace :spotify do
 
       if ENV['save']=='y'
         artist = query.first
-        SpotifyArtist.create({
-          :name => artist.name,
+        SpotifyArtist.find_or_initialize_by_name(artist.name).update_attributes({
           :popularity => artist.popularity,
           :avatar_url => artist.images.last['url'],
           :genres => artist.genres.join(','),
+          :spotify_id => artist.id,
         })
         puts ". saved!"
       end
@@ -39,11 +39,11 @@ namespace :spotify do
       
       artist = query.first
       if artist
-        SpotifyArtist.create({
-          :name => artist.name,
+        SpotifyArtist.find_or_initialize_by_name(artist.name).update_attributes({
           :popularity => artist.popularity,
           :avatar_url => artist.images.last['url'],
           :genres => artist.genres.join(','),
+          :spotify_id => artist.id,
         })
         print "."
       else
@@ -52,6 +52,5 @@ namespace :spotify do
     end
     puts "Done!"
   end
-
   
 end

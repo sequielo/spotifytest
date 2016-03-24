@@ -5,6 +5,7 @@
     <th>Name</th>
     <th>Popularity</th>
     <th>Avatar url</th>
+    <th>Spotify ID</th>
     <th>Genres</th>
   </tr>
 
@@ -13,6 +14,7 @@
     <td><%=h spotify_artist.name %></td>
     <td><%=h spotify_artist.popularity %></td>
     <td><%=image_tag spotify_artist.avatar_url %></td>
+    <td><%=h spotify_artist.spotify_id %></td>
     <td><%=h spotify_artist.genres %></td>
     <td><%= link_to 'Show', spotify_artist %></td>
     <td><%= link_to 'Edit', edit_spotify_artist_path(spotify_artist) %></td>

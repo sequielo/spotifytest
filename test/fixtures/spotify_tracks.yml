@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  duration: 1
+  track_number: 1
+  disc_number: 1
+  preview_url: MyString
+
+two:
+  name: MyString
+  duration: 1
+  track_number: 1
+  disc_number: 1
+  preview_url: MyString
