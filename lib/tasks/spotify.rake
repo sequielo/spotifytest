@@ -28,4 +28,30 @@ namespace :spotify do
       end
     end
   end
+
+  desc "Populate Spotify artists from Dj"
+  task :populate_djs => :environment do
+    Dj.all.each do |dj|
+      dj_name = dj.name
+      require 'rspotify'
+      RSpotify.authenticate(SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET)
+      query = RSpotify::Artist.search(dj_name)
+      
+      artist = query.first
+      if artist
+        SpotifyArtist.create({
+          :name => artist.name,
+          :popularity => artist.popularity,
+          :avatar_url => artist.images.last['url'],
+          :genres => artist.genres.join(','),
+        })
+        print "."
+      else
+        puts "dj #{dj_name} not found"
+      end
+    end
+    puts "Done!"
+  end
+
+  
 end
